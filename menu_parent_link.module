@@ -7,7 +7,7 @@
 function menu_parent_link_block_info() {
   $blocks['menu_parent_link_main_menu'] = array(
     'info' => t('Menu Parent Link for Main Menu'), 
-    'cache' => DRUPAL_NO_CACHE,
+    'cache' => DRUPAL_CACHE_PER_PAGE,
   );
 
   return $blocks;
