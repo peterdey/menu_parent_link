@@ -45,7 +45,7 @@ foreach($result as $record){
     $parents['links'][$record->plid] = array('title' => $parent['link_title'], 'href' => $parent['link_path'], 'options' => $parent['options']); 
   }         
 }
-if(count($parents['links']) > 1) {
+if(isset($parents['links']) && count($parents['links']) > 1) {
 //render as list
   $parents['attributes']['class'] = array('links');
   return theme_links($parents);
